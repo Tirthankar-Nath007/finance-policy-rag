@@ -1,0 +1,23 @@
+0+/SUB/DBT/LSS/SMA- reported before/prior 
+to 24 months from current date L2 
+90+/SUB/DBT/LSS/SMA- reported before/prior 
+to 12 months from current date L3 
+90+/SUB/DBT/LSS/SMA- reported in last  12 
+months from current date Not Allowed 
+Written off/Repo/Settlement/Suit Filed with 
+closed date more than 24 months from current 
+date 
+L1 
+Written off/Repo/Settlement/Suit Filed with 
+closed date more than 12 months from current 
+date and reported amount is less than Rs.10k 
+L1 
+Written off/Repo/Settlement/Suit Filed with 
+closed date more than 12 months from current 
+date and reported amount is more than Rs.10k 
+L2 
+Written off/Repo/Settlement/Suit Filed closed 
+in last 12 months. Not Allowed 
+Guarantor-Thin Cibil 
+Any (OD/DPD/SUB/DBT/LSS/SMA/Written -
+off/Repo/Settlement/Suit-Filed) - Thin c

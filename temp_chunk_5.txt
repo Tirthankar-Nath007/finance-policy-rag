@@ -1,0 +1,26 @@
+oan >= 6 Months 50,000 
+Consumer Durable Loans  >= 6 Months 50,000 
+Loan to Professional >= 6 Months 50,000 
+Two-Wheeler Loan >= 6 Months 50,000 
+Commercial Vehicle loan >= 6 Months 50,000 
+Used car loan >= 6 Months 50,000 
+Construction Equipment loan >= 6 Months 50,000 
+Tractor loan >= 6 Months 50,000 
+Business loan – Secured >= 6 Months 50,000 
+Business loan – General >= 6 Months 50,000 
+Business loan - Unsecured loan >= 6 Months 50,000 
+HL/LAP >= 6 Months 1,00,000 
+ 
+- Gold loan and Credit card to be considered under Thin for all vintage and loan amount. 
+ 
+Deviation Matrix: 
+ 
+ 
+Category Deviation criteria Approving 
+Authority 
+For Applicant and Co-applicant - Thin Cibil 
+Any OD/DPD/SUB/DBT/LSS/SMA/Written-
+off/Repo/Settlement/Suit-Filed - Thin cibil 
+accounts 
+L1 
+For Applicant and Co

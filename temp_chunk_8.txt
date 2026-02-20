@@ -1,0 +1,27 @@
+Guarantor-Thin Cibil 
+Any (OD/DPD/SUB/DBT/LSS/SMA/Written -
+off/Repo/Settlement/Suit-Filed) - Thin cibil 
+accounts 
+L1 
+Guarantor- Thick Cibil-KCC & Gold Loans 
+Any(OD/DPD/SUB/DBT/LSS/SMA/Written-
+off/Repo/Settlement/SuitFiled) - Thin cibil 
+accounts 
+L1 
+For Guarantor ( Thick Cibil )(Gold Loan, KCC 
+loans not to be considered for cibil deviation) 
+OD < 10k L1 
+OD 10k to 25k L1 
+OD > 25k L2 
+DPD < 30 Days reported L1 
+DPD 30-89 days reported before/prior to 12 
+months from current date L1 
+DPD 30-89 days reported in last 12 months 
+from current date L1 
+90+/SUB/DBT/LSS/SMA- reported before/prior 
+to 24 months from current date L2 
+90+/SUB/DBT/LSS/SMA- reported before/prior 
+to 12 months from current date L2 
+90+/SUB/DBT/LSS/SMA- reported in last  12 
+months from current date L4 
+Written of
