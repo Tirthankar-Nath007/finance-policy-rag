@@ -2,6 +2,12 @@ FROM python:3.12-slim
 
 WORKDIR /app
 
+ARG AZURE_OPENAI_ENDPOINT
+ARG AZURE_OPENAI_API_KEY
+
+ENV AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT}
+ENV AZURE_OPENAI_API_KEY=${AZURE_OPENAI_API_KEY}
+
 RUN apt-get update && apt-get install -y --no-install-recommends \
     build-essential \
     && rm -rf /var/lib/apt/lists/*

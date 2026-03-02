@@ -1,0 +1,9 @@
+fastapi
+fastapi-cors
+uvicorn
+faiss-cpu
+openai
+pypdf
+python-dotenv
+scikit-learn
+httpx
