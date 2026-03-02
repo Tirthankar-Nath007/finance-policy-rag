@@ -39,6 +39,7 @@ env/
 
 # Data files (index is regenerated)
 data/*.pkl
+backend/data/*.pkl
 
 # Logs
 *.log
@@ -50,5 +51,9 @@ Thumbs.db
 # Docker
 *.dockerignore
 
-# PDF temp files (keep in documents/)
-*.tmp
+# Temp files
+temp_chunk_*.txt
+
+# Frontend
+frontend/node_modules/
+frontend/dist/

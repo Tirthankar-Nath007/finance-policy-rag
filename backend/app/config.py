@@ -11,12 +11,12 @@ class Settings(BaseSettings):
     top_k: int = 5
     relevance_threshold: float = 0.1
     
-    pdf_dir: Path = Path(__file__).parent.parent / "documents"
+    pdf_dir: Path = Path(__file__).parent.parent.parent / "documents"
     data_dir: Path = Path(__file__).parent.parent / "data"
-    index_path: Path = Path(__file__).parent.parent / "data" / "index.faiss"
+    index_path: Path = Path(__file__).parent.parent / "data" / "index"
     
     class Config:
-        env_file = ".env"
+        env_file = Path(__file__).parent.parent.parent / ".env"
 
 
 settings = Settings()

@@ -1,14 +1,32 @@
 version: '3.8'
 
 services:
-  rag-chatbot:
-    build: .
-    ports:
-      - "8000:8000"
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
     environment:
       - AZURE_OPENAI_ENDPOINT=${AZURE_OPENAI_ENDPOINT}
       - AZURE_OPENAI_API_KEY=${AZURE_OPENAI_API_KEY}
     volumes:
-      - ./data:/app/data
+      - ./backend/data:/app/data
       - ./documents:/app/documents
     restart: unless-stopped
+    networks:
+      - app-network
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    restart: unless-stopped
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
