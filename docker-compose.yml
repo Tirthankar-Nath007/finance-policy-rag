@@ -23,7 +23,7 @@ services:
       context: ./frontend
       dockerfile: Dockerfile
     ports:
-      - "8083:80"
+      - "8085:80"
     depends_on:
       - backend
     restart: unless-stopped
