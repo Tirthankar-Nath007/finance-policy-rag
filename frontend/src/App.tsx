@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react"
 import { Send, RefreshCw, FileText, Bot, User, AlertCircle } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Textarea } from "@/components/ui/textarea"
-import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card"
+import { Button } from "./components/ui/button"
+import { Textarea } from "./components/ui/textarea"
+import { Card, CardHeader, CardTitle, CardContent } from "./components/ui/card"
 
 interface Message {
   id: string
@@ -12,8 +12,8 @@ interface Message {
   outOfScope?: boolean
 }
 
-// const API_URL = "/api"
-const API_URL = "http://localhost:8000/api"
+const API_URL = "/api"
+// const API_URL = "http://localhost:8000/api"
 
 function App() {
   const [messages, setMessages] = useState<Message[]>([])
