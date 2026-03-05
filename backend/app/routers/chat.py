@@ -1,5 +1,6 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
+import traceback
 
 from app.rag.chatbot import chat, reload_index, OUT_OF_SCOPE_MESSAGE
 from app.rag.faiss_store import faiss_store
@@ -33,6 +34,7 @@ async def chat_endpoint(request: ChatRequest):
             out_of_scope=out_of_scope
         )
     except Exception as e:
+        print(f"Chat error: {traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -42,6 +44,7 @@ async def reload_endpoint():
         result = reload_index()
         return result
     except Exception as e:
+        print(f"Reload error: {traceback.format_exc()}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
