@@ -68,13 +68,27 @@ def get_azure_chat_response(prompt: str) -> str:
         "Content-Type": "application/json"
     }
     
-    response = client.post(url, json=data, headers=headers)
-    response.raise_for_status()
-    
-    result = response.json()
-    content = result["choices"][0]["message"]["content"]
-    
-    return content
+    try:
+        response = client.post(url, json=data, headers=headers)
+        response.raise_for_status()
+        
+        result = response.json()
+        content = result["choices"][0]["message"]["content"]
+        
+        if not content:
+            print("WARNING: Empty content from Azure API")
+            return "I couldn't generate a response. Please try again."
+        
+        return content
+    except httpx.TimeoutException:
+        print("ERROR: Azure API timeout")
+        raise Exception("Request to AI service timed out. Please try again.")
+    except httpx.HTTPStatusError as e:
+        print(f"ERROR: Azure API HTTP error: {e.response.status_code} - {e.response.text}")
+        raise Exception(f"AI service error: {e.response.status_code}")
+    except Exception as e:
+        print(f"ERROR: Azure API error: {str(e)}")
+        raise
 
 
 def build_prompt(query: str, context_chunks: List[str], sources: List[str]) -> str:
